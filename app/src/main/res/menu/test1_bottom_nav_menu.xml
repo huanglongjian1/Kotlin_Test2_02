@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/test1Fragment01"
+        android:icon="@drawable/test1_fragment01"
+        android:title="test1Fragment01" />
+    <item
+        android:id="@+id/test1Fragment02"
+        android:icon="@drawable/test1_fragment02"
+        android:title="test1Fragment02" />
+    <item
+        android:id="@+id/test1Fragment03"
+        android:icon="@drawable/test1_fragment03"
+        android:title="test1Fragment03" />
+</menu>

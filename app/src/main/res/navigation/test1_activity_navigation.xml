@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/test1_activity_navigation"
+    app:startDestination="@id/test1Fragment01">
+
+    <fragment
+        android:id="@+id/test1Fragment01"
+        android:name="com.example.kotlin_test2.test1.fragment01.Test1Fragment01"
+        android:label="Test1Fragment01">
+        <action
+            android:id="@+id/action_test1Fragment01_to_test1Fragment02"
+            app:destination="@id/test1Fragment02" />
+    </fragment>
+    <fragment
+        android:id="@+id/test1Fragment02"
+        android:name="com.example.kotlin_test2.test1.fragment02.Test1fragment02"
+        android:label="Test1Fragment02" >
+        <action
+            android:id="@+id/action_test1Fragment02_to_test1Fragment03"
+            app:destination="@id/test1Fragment03" />
+    </fragment>
+    <fragment
+        android:id="@+id/test1Fragment03"
+        android:name="com.example.kotlin_test2.test1.fragment03.Test1Fragment03"
+        android:label="test1Fragment03" />
+</navigation>
