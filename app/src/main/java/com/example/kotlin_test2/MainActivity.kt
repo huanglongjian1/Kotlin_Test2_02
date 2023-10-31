@@ -22,7 +22,7 @@ class MainActivity : BaseActivity<BaseViewModel, ActivityMainBinding>() {
 
     override fun initView(savedInstanceState: Bundle?) {
         binding.mianTv.setOnClickListener {
-            Loge.e("first")
+            Loge.e("test new")
         }
         binding.gotoNext.setOnClickListener {
             ARouter.getInstance().build(Constants.PATH_TEST1_ACTIVITY).navigation()
