@@ -21,7 +21,7 @@ class Test1Fragment04 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Loge.e("第16次")
+        Loge.e("第17次")
         return inflater.inflate(R.layout.fragment_test1_fragment04, container, false)
     }
 
