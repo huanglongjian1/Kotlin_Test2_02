@@ -7,6 +7,8 @@ import androidx.room.RoomDatabase
 import com.example.kotlin_test2.MyApp
 import com.example.kotlin_test2.db.bean.Student
 import com.example.kotlin_test2.db.bean.Teacher
+import com.example.kotlin_test2.db.dao.StudentDao
+import com.example.kotlin_test2.db.dao.TopicBeanDao
 
 @Database(entities = [Student::class, Teacher::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
@@ -37,4 +39,7 @@ abstract class AppDatabase : RoomDatabase() {
             return instance;
         }
     }
+
+    abstract fun getTopicBeanDao(): TopicBeanDao
+    abstract fun getStudentDao(): StudentDao
 }

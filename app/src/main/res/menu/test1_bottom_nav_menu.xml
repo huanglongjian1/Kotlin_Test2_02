@@ -13,4 +13,13 @@
         android:id="@+id/test1Fragment03"
         android:icon="@drawable/test1_fragment03"
         android:title="test1Fragment03" />
+    <item
+        android:id="@+id/test1Fragment04"
+        android:icon="@drawable/test1_fragment04"
+        android:title="test1Fragment04" />
+
+    <item
+        android:id="@+id/test1Fragment05"
+        android:icon="@drawable/test1_fragment05"
+        android:title="test1Fragment05" />
 </menu>

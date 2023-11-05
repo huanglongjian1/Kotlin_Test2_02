@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.kotlin_test2.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -43,6 +44,21 @@ class BlankFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val textView = view.findViewById<TextView>(R.id.blankFragment1_tv)
         textView.text = param1 + ":" + param2 + ":---" + this.javaClass.simpleName
+        val swipeRefreshLayout = view.findViewById<SwipeRefreshLayout>(R.id.SwipeRefreshLayout)
+        swipeRefreshLayout.setOnRefreshListener {
+            textView.text = "当前时间:" + System.currentTimeMillis().toString()
+                swipeRefreshLayout.isRefreshing = false
+
+        }
+
+        textView.setOnClickListener {
+//            lifecycleScope.launch {
+//                val string = RetrofitBuilder.create<ApiService>(ApiService.BASEURL_BAIDU)
+//                    .getBaidu().string()
+//                Loge.e(string)
+//            }
+        }
+
     }
 
     companion object {

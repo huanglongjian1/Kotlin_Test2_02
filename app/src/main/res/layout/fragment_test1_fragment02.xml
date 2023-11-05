@@ -12,9 +12,11 @@
         tools:context=".test1.fragment02.test1_fragment02">
 
         <TextView
+            android:id="@+id/test1_fragment02_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="test1_fragment02" />
+            android:text="test1_fragment02"
+            android:textSize="30sp" />
 
     </FrameLayout>
 </layout>

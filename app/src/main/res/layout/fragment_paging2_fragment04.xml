@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/test1_fragment04_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fragment04"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/test1_fragment04_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:textSize="30sp" />
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/test1_fragment04_SwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/test1_fragment04_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="end"
+            android:textSize="30sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

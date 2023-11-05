@@ -7,6 +7,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
 import com.example.kotlin_test2.base.ActivityManager
 import com.example.kotlin_test2.base.BaseViewModel
+import java.lang.reflect.ParameterizedType
 
 abstract class BaseActivityKT<VM : BaseViewModel, VDB : ViewDataBinding> : AppCompatActivity() {
     val binding: VDB by lazy {
@@ -31,7 +32,11 @@ abstract class BaseActivityKT<VM : BaseViewModel, VDB : ViewDataBinding> : AppCo
         initView(savedInstanceState)
     }
 
-    abstract fun createViewModel(): Class<VM>
+    private fun createViewModel(): Class<VM> {
+        val type = (javaClass.genericSuperclass as ParameterizedType).actualTypeArguments[0]
+        return type as Class<VM>
+    }
+
     abstract fun getContentViewId(): Int
     abstract fun initData()
     abstract fun initView(savedInstanceState: Bundle?)

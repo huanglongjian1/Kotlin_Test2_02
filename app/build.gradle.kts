@@ -52,8 +52,15 @@ android {
 }
 
 dependencies {
-    implementation ("com.gyf.immersionbar:immersionbar:3.0.0")
-    implementation ("com.gyf.immersionbar:immersionbar-ktx:3.0.0")
+
+    implementation("androidx.paging:paging-runtime-ktx:3.1.1") // For Kotlin use paging-runtime-ktx
+    implementation ("androidx.room:room-paging:2.5.0-alpha01")
+    // alternatively - without Android dependencies for testing
+    testImplementation("androidx.paging:paging-common-ktx:3.1.1") // For Kotlin use paging-common-ktx
+
+
+    implementation("com.gyf.immersionbar:immersionbar:3.0.0")
+    implementation("com.gyf.immersionbar:immersionbar-ktx:3.0.0")
 
     implementation("com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4")//BaseRecyclerViewAdapterHelper
     implementation("io.github.vincent-series:sharp-retrofit:1.9")
@@ -85,6 +92,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.5.1")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.4")
+    implementation("androidx.work:work-runtime-ktx:2.8.1")
     // 导入注解处理器 ( Java )
     annotationProcessor("androidx.room:room-compiler:2.5.1")
     // 导入 Room 依赖库
@@ -98,6 +106,7 @@ dependencies {
     implementation("com.alibaba:arouter-api:1.5.2")
     annotationProcessor("com.alibaba:arouter-compiler:1.5.2")
 
+    implementation("androidx.work:work-runtime-ktx:2.8.1")
 //arouter 路由跳转
 
     androidTestImplementation("androidx.test:rules:1.5.0")

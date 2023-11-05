@@ -16,9 +16,6 @@ class Test1Fragment01 : BaseFragmentKT<Test1Fragment01ViewModel, FragmentTest1Fr
         fun newInstance() = Test1Fragment01()
     }
 
-    override fun createViewModel(): Class<Test1Fragment01ViewModel> {
-        return Test1Fragment01ViewModel::class.java
-    }
 
     override fun getLayoutId(): Int {
         return R.layout.fragment_test1_fragment01

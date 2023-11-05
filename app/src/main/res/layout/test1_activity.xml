@@ -14,7 +14,9 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/navigate_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:background="@color/colorPrimary"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/navigate_toolbar_back" />
 
         <TextView
             android:id="@+id/test1_tv"

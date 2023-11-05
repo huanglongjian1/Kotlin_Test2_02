@@ -5,11 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".test1.fragment01.viewpage2.BlankFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/blankFragment1_tv"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/blankFragment1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </FrameLayout>

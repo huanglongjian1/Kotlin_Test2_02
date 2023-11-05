@@ -15,7 +15,7 @@
     <fragment
         android:id="@+id/test1Fragment02"
         android:name="com.example.kotlin_test2.test1.fragment02.Test1fragment02"
-        android:label="Test1Fragment02" >
+        android:label="Test1Fragment02">
         <action
             android:id="@+id/action_test1Fragment02_to_test1Fragment03"
             app:destination="@id/test1Fragment03" />
@@ -24,4 +24,12 @@
         android:id="@+id/test1Fragment03"
         android:name="com.example.kotlin_test2.test1.fragment03.Test1Fragment03"
         android:label="test1Fragment03" />
+    <fragment
+        android:id="@+id/test1Fragment04"
+        android:name="com.example.kotlin_test2.test1.fragment04.Paging2Fragment04"
+        android:label="Paging2Fragment04" />
+    <fragment
+        android:id="@+id/test1Fragment05"
+        android:name="com.example.kotlin_test2.test1.fragment05.Test1Fragment05"
+        android:label="Test1Fragment05" />
 </navigation>
